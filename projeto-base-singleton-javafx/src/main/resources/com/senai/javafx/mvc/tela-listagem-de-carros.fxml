@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.senai.javafx.mvc.controller.ListagemDeCarrosController">
+
+    <children>
+        <Label layoutX="25.0" layoutY="20.0" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Listagem de Carros" />
+
+        <TableView fx:id="tabelaCarros" layoutX="25.0" layoutY="65.0" prefHeight="350.0" prefWidth="701.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0">
+
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="60.0" text="ID" />
+
+                <TableColumn fx:id="colNome" prefWidth="150.0" text="Nome" />
+
+                <TableColumn fx:id="colMarca" prefWidth="140.0" text="Marca" />
+
+                <TableColumn fx:id="colModelo" prefWidth="150.0" text="Modelo" />
+
+                <TableColumn fx:id="colPlaca" prefWidth="150.0" text="Placa" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="25.0" layoutY="430.0" onAction="#atualizarTabela" text="Atualizar" />
+      <Button layoutX="99.0" layoutY="430.0" mnemonicParsing="false" text="Cadastrar" />
+    </children>
+</AnchorPane>

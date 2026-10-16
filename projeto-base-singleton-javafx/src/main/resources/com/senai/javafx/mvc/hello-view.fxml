@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="665.0" prefWidth="945.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.senai.javafx.mvc.controller.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <TextField fx:id="txtfNomeDoCarro" prefHeight="23.0" prefWidth="905.0" promptText="Digite o nome do carro" />
+      <TextField fx:id="txtfMarcaDoCarro" promptText="Digite a marca do carro" />
+      <TextField fx:id="txtfModeloDoCarro" promptText="Digite o modelo do carro" />
+      <TextField fx:id="txtfPlacaDoCarro" promptText="Digite a placa do carro" />
+      <Button mnemonicParsing="false" onAction="#salvar" prefHeight="48.0" prefWidth="81.0" style="-fx-background-color: #000;" text="Salvar" textFill="WHITE" />
+   </children>
+</VBox>
